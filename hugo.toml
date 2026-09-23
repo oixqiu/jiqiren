@@ -1,11 +1,11 @@
 # ============================================================
-#  jiqiren.gs.cn — 机器人企业官网（Hugo + universal 主题）
+#  jiqiren.gs.cn — 机器人联盟官网（Hugo + universal 主题）
 #  多语言：中文（默认，站根路径）+ English（/en/）
 #  部署：GitHub Pages（GitHub Actions 自动构建发布）
 # ============================================================
 
 baseURL = "https://jiqiren.gs.cn/"
-title = "机器人企业官网"
+title = "机器人联盟"
 theme = "hugo-universal-theme"
 
 # 默认语言：中文（站根路径），英文在 /en/
@@ -28,8 +28,8 @@ enableRobotsTXT = true
   label = "中文"
   weight = 1
   contentDir = "content/zh"
-  title = "机器人企业官网"
-  description = "机器人企业官网 - jiqiren.gs.cn"
+  title = "机器人联盟"
+  description = "机器人联盟 - jiqiren.gs.cn"
 
   [languages.zh.menu]
     [[languages.zh.menu.main]]
@@ -58,8 +58,8 @@ enableRobotsTXT = true
   label = "English"
   weight = 2
   contentDir = "content/en"
-  title = "Robotics Enterprise"
-  description = "Robotics Enterprise - jiqiren.gs.cn"
+  title = "Robotics Alliance"
+  description = "Robotics Alliance - jiqiren.gs.cn"
 
   [languages.en.menu]
     [[languages.en.menu.main]]
@@ -83,26 +83,26 @@ enableRobotsTXT = true
       url = "/en/contact/"
       weight = 5
 
-# ---------------- 顶栏社交/电话（占位，后续替换） ----------------
+# ---------------- 顶栏电话/邮箱 ----------------
 [[menu.topbar]]
   weight = 1
   name = "Phone"
-  url = "tel:+86-0531-00000000"
+  url = "tel:+86-13011731181"
   pre = "<i class='fas fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
   weight = 2
   name = "Email"
-  url = "mailto:contact@jiqiren.gs.cn"
+  url = "mailto:robot@jiqiren.gs.cn"
   pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 # ---------------- 站点参数 ----------------
 [params]
   viewMorePostLink = "/blog/"
-  author = "jiqiren"
-  defaultKeywords = ["机器人", "机器人企业", "工业机器人", "robotics"]
+  author = "机器人联盟"
+  defaultKeywords = ["机器人联盟", "机器人", "工业机器人", "机器人企业", "robotics"]
   mainSections = ["blog"]
-  defaultDescription = "机器人企业官网"
+  defaultDescription = "机器人联盟官网"
 
   # 社交账号（占位）
   facebook_site = ""
@@ -127,8 +127,8 @@ enableRobotsTXT = true
   googleRecaptchaKey = ""
 
   # 首页“关于我们”摘要（占位，待提供正式文案）
-  about_us = "<p>专注机器人研发与智能制造解决方案的科技企业。公司介绍与资质信息正在整理中，稍后更新。</p>"
-  copyright = "Copyright © 2026 jiqiren.gs.cn 版权所有"
+  about_us = "<p>机器人联盟——专注机器人研发与智能制造解决方案的科技企业。公司介绍与资质信息正在整理中，稍后更新。</p>"
+  copyright = "Copyright © 2026 机器人联盟 版权所有"
 
   # 日期格式（Go 时间格式）
   date_format = "2006-01-02"
@@ -137,16 +137,15 @@ enableRobotsTXT = true
 
   # Logo（当前使用主题占位图，正式 Logo 提供后替换 static/img/logo.png）
   disabled_logo = false
-  logo_text = "机器人"
+  logo_text = "机器人联盟"
   logo = "img/logo.png"
   logo_small = "img/logo-small.png"
 
   contact_url = "/contact/"
 
-  # 页脚/联系页地址（占位，待提供）
-  address = """<p class="text-uppercase"><strong>机器人企业</strong>
-      <br>山东省济南市
-      <br>（地址待补充）
+  # 页脚/联系页地址
+  address = """<p class="text-uppercase"><strong>机器人联盟</strong>
+      <br>山东省济南市高新区齐鲁软件园机器人联盟
       <br>
       <strong>China</strong>
     </p>
@@ -154,9 +153,9 @@ enableRobotsTXT = true
 
 [params.topbar]
   enable = true
-  text = """<p class="hidden-sm hidden-xs">联系我们：+86-0531-00000000 或 contact@jiqiren.gs.cn（电话/邮箱待更新）</p>
-    <p class="hidden-md hidden-lg"><a href="tel:+86-0531-00000000" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-    <a href="mailto:contact@jiqiren.gs.cn" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+  text = """<p class="hidden-sm hidden-xs">联系我们：+86-13011731181 或 robot@jiqiren.gs.cn</p>
+    <p class="hidden-md hidden-lg"><a href="tel:+86-13011731181" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+    <a href="mailto:robot@jiqiren.gs.cn" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
     </p>
     """
 

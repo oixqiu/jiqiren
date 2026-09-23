@@ -10,6 +10,6 @@ keywords = ["contact", "address"]
 
 Please feel free to contact us. Our customer service team is ready to help.
 
-- **Phone**: +86-0531-00000000 (to be updated)
-- **Email**: contact@jiqiren.gs.cn (to be updated)
-- **Address**: Jinan, Shandong, China (to be updated)
+- **Phone**: +86-13011731181
+- **Email**: robot@jiqiren.gs.cn
+- **Address**: Robotics Alliance, Qilu Software Park, High-tech Zone, Jinan, Shandong, China

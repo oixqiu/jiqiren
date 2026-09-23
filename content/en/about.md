@@ -7,7 +7,7 @@ keywords = ["about", "company", "robotics"]
 
 # About Us
 
-We are a technology company focused on robotics R&D and intelligent manufacturing solutions, covering robot bodies, control systems, AI vision algorithms and production line automation.
+**Robotics Alliance** is a technology company focused on robotics R&D and intelligent manufacturing solutions, covering robot bodies, control systems, AI vision algorithms and production line automation.
 
 > Detailed company introduction, history and qualifications are being prepared and will be updated soon.
 

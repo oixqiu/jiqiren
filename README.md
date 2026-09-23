@@ -1,4 +1,4 @@
-# jiqiren — 机器人企业官网
+# jiqiren — 机器人联盟官网
 
 机器人最前沿 · 基于 **Hugo** 与 **universal 主题** 的企业官网，托管于 **GitHub Pages**，域名 `jiqiren.gs.cn`。
 
