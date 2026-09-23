@@ -1,0 +1,11 @@
+weight: 1
+title: "智能机器人解决方案"
+description: >
+  <ul class="list-style-none">
+    <li>工业机器人整机与核心部件</li>
+    <li>产线自动化与智能化改造</li>
+    <li>AI 视觉、算法与云平台</li>
+    <li>7×24 小时技术支持</li>
+  </ul>
+image: "img/carousel/template-mac.png"
+href: "/products/"

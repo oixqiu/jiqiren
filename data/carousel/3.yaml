@@ -1,0 +1,10 @@
+weight: 3
+title: "AI 算法与定制开发"
+description: >
+  <ul class="list-style-none">
+    <li>机器视觉与感知算法</li>
+    <li>行业定制化应用开发</li>
+    <li>从方案设计到落地交付</li>
+  </ul>
+image: "img/carousel/template-easy-code.png"
+href: "/products/"

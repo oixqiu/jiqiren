@@ -1,0 +1,27 @@
+# 站点级 i18n 覆盖（优先级高于主题内的 zh.yaml）
+# 这里把主题里未翻译的月份补成中文
+
+- id: January
+  translation: "一月"
+- id: February
+  translation: "二月"
+- id: March
+  translation: "三月"
+- id: April
+  translation: "四月"
+- id: May
+  translation: "五月"
+- id: June
+  translation: "六月"
+- id: July
+  translation: "七月"
+- id: August
+  translation: "八月"
+- id: September
+  translation: "九月"
+- id: October
+  translation: "十月"
+- id: November
+  translation: "十一月"
+- id: December
+  translation: "十二月"

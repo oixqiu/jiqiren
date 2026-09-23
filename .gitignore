@@ -1,0 +1,15 @@
+# Hugo 构建产物
+public/
+
+# Hugo 缓存
+resources/_gen/
+
+# 构建锁
+.hugo_build.lock
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本地环境
+.hugo

@@ -1,0 +1,220 @@
+# ============================================================
+#  jiqiren.gs.cn — 机器人企业官网（Hugo + universal 主题）
+#  多语言：中文（默认，站根路径）+ English（/en/）
+#  部署：GitHub Pages（GitHub Actions 自动构建发布）
+# ============================================================
+
+baseURL = "https://jiqiren.gs.cn/"
+title = "机器人企业官网"
+theme = "hugo-universal-theme"
+
+# 默认语言：中文（站根路径），英文在 /en/
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+
+locale = "zh-CN"
+summaryLength = 70
+pluralizelisttitles = false
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+# ---------------- 多语言 ----------------
+[languages]
+
+[languages.zh]
+  locale = "zh-CN"
+  label = "中文"
+  weight = 1
+  contentDir = "content/zh"
+  title = "机器人企业官网"
+  description = "机器人企业官网 - jiqiren.gs.cn"
+
+  [languages.zh.menu]
+    [[languages.zh.menu.main]]
+      name = "首页"
+      url = "/"
+      weight = 1
+    [[languages.zh.menu.main]]
+      name = "关于我们"
+      url = "/about/"
+      weight = 2
+    [[languages.zh.menu.main]]
+      name = "产品中心"
+      url = "/products/"
+      weight = 3
+    [[languages.zh.menu.main]]
+      name = "新闻动态"
+      url = "/blog/"
+      weight = 4
+    [[languages.zh.menu.main]]
+      name = "联系我们"
+      url = "/contact/"
+      weight = 5
+
+[languages.en]
+  locale = "en-US"
+  label = "English"
+  weight = 2
+  contentDir = "content/en"
+  title = "Robotics Enterprise"
+  description = "Robotics Enterprise - jiqiren.gs.cn"
+
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/en/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "Products"
+      url = "/en/products/"
+      weight = 3
+    [[languages.en.menu.main]]
+      name = "News"
+      url = "/en/blog/"
+      weight = 4
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 5
+
+# ---------------- 顶栏社交/电话（占位，后续替换） ----------------
+[[menu.topbar]]
+  weight = 1
+  name = "Phone"
+  url = "tel:+86-0531-00000000"
+  pre = "<i class='fas fa-2x fa-phone'></i>"
+
+[[menu.topbar]]
+  weight = 2
+  name = "Email"
+  url = "mailto:contact@jiqiren.gs.cn"
+  pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+# ---------------- 站点参数 ----------------
+[params]
+  viewMorePostLink = "/blog/"
+  author = "jiqiren"
+  defaultKeywords = ["机器人", "机器人企业", "工业机器人", "robotics"]
+  mainSections = ["blog"]
+  defaultDescription = "机器人企业官网"
+
+  # 社交账号（占位）
+  facebook_site = ""
+  twitter_site = ""
+  default_sharing_image = "img/sharing-default.png"
+
+  # 地图：未配置 API Key 前关闭，避免地图组件请求失败
+  enableGoogleMaps = false
+  googleMapsApiKey = ""
+  latitude = "36.6512"     # 济南（占位，可按公司地址修改）
+  longitude = "117.1201"
+
+  # 配色：default(浅蓝) / blue / green / marsala / pink / red / turquoise / violet
+  style = "default"
+
+  # 联系表单：universal 主题通过 Formspree 代发邮件。
+  # 需要时注册 https://formspree.io 新建表单，把端点填到 formspree_action；
+  # 未填写前联系页不显示表单（避免无效提交）。
+  # formspree_action = "https://formspree.io/YOUR_ENDPOINT"
+  contact_form_ajax = false
+  enableRecaptchaInContactForm = false
+  googleRecaptchaKey = ""
+
+  # 首页“关于我们”摘要（占位，待提供正式文案）
+  about_us = "<p>专注机器人研发与智能制造解决方案的科技企业。公司介绍与资质信息正在整理中，稍后更新。</p>"
+  copyright = "Copyright © 2026 jiqiren.gs.cn 版权所有"
+
+  # 日期格式（Go 时间格式）
+  date_format = "2006-01-02"
+
+  dropdown_mouse_over = false
+
+  # Logo（当前使用主题占位图，正式 Logo 提供后替换 static/img/logo.png）
+  disabled_logo = false
+  logo_text = "机器人"
+  logo = "img/logo.png"
+  logo_small = "img/logo-small.png"
+
+  contact_url = "/contact/"
+
+  # 页脚/联系页地址（占位，待提供）
+  address = """<p class="text-uppercase"><strong>机器人企业</strong>
+      <br>山东省济南市
+      <br>（地址待补充）
+      <br>
+      <strong>China</strong>
+    </p>
+    """
+
+[params.topbar]
+  enable = true
+  text = """<p class="hidden-sm hidden-xs">联系我们：+86-0531-00000000 或 contact@jiqiren.gs.cn（电话/邮箱待更新）</p>
+    <p class="hidden-md hidden-lg"><a href="tel:+86-0531-00000000" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+    <a href="mailto:contact@jiqiren.gs.cn" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+    </p>
+    """
+
+# 侧栏小部件
+[params.widgets]
+  categories = true
+  tags = true
+  search = true
+
+# 首页轮播
+[params.carouselHomepage]
+  enable = true
+  auto_play = true
+  slide_speed = 2000
+  pagination_speed = 1000
+
+# 首页特性/服务板块
+[params.features]
+  enable = true
+  cols = 3   # 可选 2,3,4,6
+
+# 客户评价
+[params.testimonials]
+  enable = true
+  title = "客户评价"
+  subtitle = "客户对我们的评价，正式内容待补充。"
+
+# 更多板块（当前关闭，避免占位内容影响观感）
+[params.see_more]
+  enable = false
+  icon = "far fa-file-alt"
+  title = ""
+  subtitle = ""
+  link_url = "#"
+  link_text = ""
+
+# 合作客户
+[params.clients]
+  enable = true
+  title = "合作客户"
+  subtitle = ""
+
+# 首页最新博客
+[params.recent_posts]
+  enable = true
+  title = "最新动态"
+  subtitle = "公司新闻与行业动态，正式内容待补充。"
+  hide_summary = false
+
+[params.footer.recent_posts]
+  enable = true
+
+# ---------------- 分类法 ----------------
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+# ---------------- 链接格式 ----------------
+[permalinks]
+  blog = "/blog/:year/:month/:contentbasename/"
