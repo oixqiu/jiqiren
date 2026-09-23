@@ -42,6 +42,21 @@ hugo                    # 构建到 public/
 
 > 注意：主题通过 git submodule 引入，克隆仓库时请使用 `git clone --recurse-submodules` 或执行 `git submodule update --init --recursive`。
 
+## 更新新闻动态（博客）
+
+新闻动态就是博客功能，入口 `/blog/`。更新一篇新文章只需两步（无需本地环境）：
+
+1. 打开仓库 `content/zh/blog/` 目录 → 参考 **`_new-post-template.md`** 模板（或直接复制它改名）
+2. 按模板填写标题/时间/分类/正文 → 点击 **Commit changes** 提交
+
+约 1-2 分钟后网站自动更新。要点：
+
+- 文件名随意（建议英文/拼音）；`title`、`date` 必填，其余可省略
+- 配图：先上传图片到 `static/img/`（如 `static/img/blog/`），正文里用 `/img/blog/xxx.jpg` 引用
+- 分类、标签可在侧栏看到，可自由新增
+- 英文文章放在 `content/en/blog/`，格式相同
+- 想先写不发布？把 `draft = true` 加进 front matter 即可
+
 ## 发布
 
 推送 `main` 分支即触发 GitHub Actions 自动构建并部署到 `https://jiqiren.gs.cn`，无需手动操作。
