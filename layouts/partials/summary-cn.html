@@ -1,0 +1,10 @@
+{{/*
+  摘要组件：按字符截取约 100 个字符（对中文安全），超长加省略号。
+  用法：{{ partial "summary-cn.html" . }}
+*/}}
+{{ $full := .Content | plainify }}
+{{ $summary := $full }}
+{{ if gt (len $full) 100 }}
+  {{ $summary = printf "%s…" (substr $full 0 100) }}
+{{ end }}
+{{ $summary }}

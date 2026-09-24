@@ -48,7 +48,7 @@
                                 <div class="col-md-7">
                                     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                                     {{ if not .Site.Params.recent_posts.hide_summary }}
-                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="intro">{{ partial "summary-cn.html" . }}</p>
                                     <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
                                     </p>
                                     {{ end }}
