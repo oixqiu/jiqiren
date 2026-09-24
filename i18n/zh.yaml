@@ -25,3 +25,5 @@
   translation: "十一月"
 - id: December
   translation: "十二月"
+- id: backToProducts
+  translation: "返回产品中心"

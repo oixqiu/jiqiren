@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                {{ if .Content }}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="post-content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+
+                <div class="row products-grid">
+                    {{ range .Pages.ByWeight }}
+                    <div class="col-md-6">
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="image">
+                                        <a href="{{ .Permalink }}">
+                                            {{ if .Params.banner }}
+                                            <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="{{ .Title }}" />
+                                            {{ else }}
+                                            <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="{{ .Title }}" />
+                                            {{ end }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    {{ if not .Site.Params.recent_posts.hide_summary }}
+                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                    </p>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    {{ end }}
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

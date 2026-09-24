@@ -1,0 +1,4 @@
+# 站点级 i18n 覆盖（优先级高于主题内的 en.yaml）
+
+- id: backToProducts
+  translation: "Back to Products"
