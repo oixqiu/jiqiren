@@ -21,11 +21,8 @@
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
-                                {{ if and (isset .Params "banner") (ne .Params.banner "") }}
-                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" />
-                                {{ else }}
-                                <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="" />
-                                {{ end }}
+                                {{ $img := partial "featured-image.html" . }}
+                                <img src="{{ $img | relURL }}" class="img-responsive" alt="{{ .Title }}" />
                             </div>
                             <div class="bg"></div>
                             <div class="text">

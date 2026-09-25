@@ -37,11 +37,8 @@
                                 <div class="col-md-5">
                                     <div class="image">
                                         <a href="{{ .Permalink }}">
-                                            {{ if .Params.banner }}
-                                            <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="{{ .Title }}" />
-                                            {{ else }}
-                                            <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="{{ .Title }}" />
-                                            {{ end }}
+                                            {{ $img := partial "featured-image.html" . }}
+                                            <img src="{{ $img | relURL }}" class="img-responsive" alt="{{ .Title }}" />
                                         </a>
                                     </div>
                                 </div>

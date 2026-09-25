@@ -1,0 +1,19 @@
+{{/*
+  文章/产品缩略图组件（优先级）：
+  1. front matter 的 banner 字段（显式指定封面）
+  2. 正文内容里的第一张图片
+  3. 都没有时使用默认机器人封面 img/placeholder.png
+  用法：{{ $img := partial "featured-image.html" . }}  →  {{ $img | relURL }}
+  注意：内部使用 {{- -}} 控制空白，输出只含图片路径本身。
+*/}}
+{{- $img := "" -}}
+{{- if and (isset .Params "banner") (ne .Params.banner "") -}}
+  {{- $img = .Params.banner -}}
+{{- else -}}
+  {{- $matches := findRE `<img[^>]+src=["']([^"']+)["']` .Content -}}
+  {{- if gt (len $matches) 0 -}}
+    {{- $img = replaceRE `^.*src=["']([^"']+)["'].*$` "$1" (index $matches 0) -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $img "" -}}{{ $img = "img/placeholder.png" }}{{- end -}}
+{{- $img -}}
