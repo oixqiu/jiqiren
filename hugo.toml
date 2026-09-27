@@ -192,10 +192,10 @@ enableRobotsTXT = true
   link_url = "#"
   link_text = ""
 
-# 合作客户
+# 意向合作客户
 [params.clients]
   enable = true
-  title = "合作客户"
+  title = "意向合作客户"
   subtitle = ""
 
 # 首页最新博客

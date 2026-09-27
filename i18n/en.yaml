@@ -2,3 +2,5 @@
 
 - id: backToProducts
   translation: "Back to Products"
+- id: clientsTitle
+  translation: "Prospective Partners"

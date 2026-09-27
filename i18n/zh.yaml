@@ -27,3 +27,5 @@
   translation: "十二月"
 - id: backToProducts
   translation: "返回产品中心"
+- id: clientsTitle
+  translation: "意向合作客户"
