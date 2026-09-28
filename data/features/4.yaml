@@ -1,5 +1,7 @@
 weight: 4
-name: "AI 与视觉算法"
+name: "AI视觉算法"
+name_en: "AI Vision Algorithm"
 icon: "fas fa-brain"
 url: ""
-description: "机器视觉、目标识别与运动控制算法，让机器人更智能、更精准。"
+description: "自研高精度AI视觉算法，支持物品识别、杂草甄别、蚊虫追踪、人体避障等功能。适配多视角作业，精准区分目标与无关物体，软硬件双重防护，作业精准、安全可靠。"
+description_en: "Self-developed high-precision AI vision algorithms support item recognition, weed identification, mosquito tracking and human obstacle avoidance. Adaptable to multi-angle operation, it accurately distinguishes targets with dual software and hardware protection for precise and safe operation."

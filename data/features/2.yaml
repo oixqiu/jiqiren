@@ -1,5 +1,7 @@
 weight: 2
-name: "智能制造"
-icon: "fas fa-industry"
+name: "机器人研发"
+name_en: "Robot R&D"
+icon: "fas fa-robot"
 url: ""
-description: "面向工厂提供自动化产线、机器人工作站与数字化车间整体解决方案。"
+description: "拥有完整自主研发实力，深耕仿生四足机器人、升降模组、AI视觉云台、激光作业系统核心技术，完成结构、硬件、算法、功能全链路开发迭代，可定制各类智能机器人产品。"
+description_en: "We possess independent full-cycle R&D capabilities. Focusing on bionic quadruped robots, lifting modules, AI vision gimbals and laser operating systems, we conduct iterative development of structures, hardware and algorithms to customize various intelligent robots."

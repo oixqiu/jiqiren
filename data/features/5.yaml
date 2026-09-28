@@ -1,5 +1,7 @@
 weight: 5
-name: "售后服务"
-icon: "fas fa-headset"
+name: "机器人销售"
+name_en: "Robot Sales"
+icon: "fas fa-cart-shopping"
 url: ""
-description: "安装调试、操作培训、远程运维与定期保养，7×24 小时响应。"
+description: "线上线下一体化销售，主营自研寻物、除草、高低空灭蚊全系机器人。面向家庭、园区、商用场景提供整机销售、定制采购及全套售后维保服务，全程保障用户体验。"
+description_en: "We provide online and offline integrated sales services for full-line self-developed robots including item-searching, weeding and high/low-altitude mosquito-killing robots. We offer equipment sales, customized procurement and complete after-sales maintenance for household, park and commercial scenarios."
