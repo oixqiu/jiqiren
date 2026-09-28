@@ -1,6 +1,43 @@
-# 站点级 i18n 覆盖（优先级高于主题内的 en.yaml）
+# 站点级 i18n 覆盖（优先级高于主题内的 zh.yaml）
+# 这里把主题里未翻译的月份补成中文
 
 - id: backToProducts
   translation: "Back to Products"
 - id: clientsTitle
   translation: "Prospective Partners"
+- id: carousel1Title
+  translation: "Intelligent Robot Solutions"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>Complete industrial robots and key components</li><li>Production line automation and intelligent upgrading</li><li>AI vision, algorithms and cloud platform</li><li>7×24 technical support</li></ul>"
+- id: carousel2Title
+  translation: "Empowering Intelligent Manufacturing"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>Overall solutions for manufacturing enterprises</li><li>Robot workstations and flexible production lines</li><li>Data-driven production management</li></ul>"
+- id: carousel3Title
+  translation: "AI Algorithms & Custom Development"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>Machine vision and perception algorithms</li><li>Customized application development</li><li>From design to delivery</li></ul>"
+- id: feature1Name
+  translation: "Industry Solutions"
+- id: feature1Desc
+  translation: "Focusing on AI robot scenario applications, we provide customized one-stop solutions for household, courtyard, park and commercial scenarios. Covering intelligent item searching, laser weeding, intelligent mosquito killing and disinfection operations, we deliver tailored deployment to meet intelligent upgrading demands."
+- id: feature2Name
+  translation: "Robot R&D"
+- id: feature2Desc
+  translation: "We possess independent full-cycle R&D capabilities. Focusing on bionic quadruped robots, lifting modules, AI vision gimbals and laser operating systems, we conduct iterative development of structures, hardware and algorithms to customize various intelligent robots."
+- id: feature3Name
+  translation: "Intelligent Manufacturing"
+- id: feature3Desc
+  translation: "We have built a standardized intelligent manufacturing system, integrating robot assembly, precision inspection and aging testing. Strict quality control ensures stable and safe products. We efficiently undertake standardized and customized bulk orders to realize integrated R&D and production."
+- id: feature4Name
+  translation: "AI Vision Algorithm"
+- id: feature4Desc
+  translation: "Self-developed high-precision AI vision algorithms support item recognition, weed identification, mosquito tracking and human obstacle avoidance. Adaptable to multi-angle operation, it accurately distinguishes targets with dual software and hardware protection for precise and safe operation."
+- id: feature5Name
+  translation: "Robot Sales"
+- id: feature5Desc
+  translation: "We provide online and offline integrated sales services for full-line self-developed robots including item-searching, weeding and high/low-altitude mosquito-killing robots. We offer equipment sales, customized procurement and complete after-sales maintenance for household, park and commercial scenarios."
+- id: feature6Name
+  translation: "Robot Investment & Cooperation"
+- id: feature6Desc
+  translation: "We welcome national regional agents, distributors and business partners. With independent R&D and production advantages, we offer low entry barriers and sufficient profit margins. The headquarters provides full support in products, technology, marketing and after-sales to share AI industry dividends."

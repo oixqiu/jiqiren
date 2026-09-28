@@ -29,3 +29,39 @@
   translation: "返回产品中心"
 - id: clientsTitle
   translation: "意向合作客户"
+- id: carousel1Title
+  translation: "智能机器人解决方案"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>工业机器人整机与核心部件</li><li>产线自动化与智能化改造</li><li>AI 视觉、算法与云平台</li><li>7×24 小时技术支持</li></ul>"
+- id: carousel2Title
+  translation: "助力智能制造升级"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>面向制造企业的整体解决方案</li><li>机器人工作站与柔性产线</li><li>数据驱动的生产管理</li></ul>"
+- id: carousel3Title
+  translation: "AI 算法与定制开发"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>机器视觉与感知算法</li><li>行业定制化应用开发</li><li>从方案设计到落地交付</li></ul>"
+- id: feature1Name
+  translation: "行业解决方案"
+- id: feature1Desc
+  translation: "专注AI机器人场景应用，针对家用、庭院、园区、商用等场景，提供一站式定制化解决方案。覆盖智能寻物、激光除草、智能灭蚊、消杀作业等领域，按需适配方案、落地部署，解决场景智能化升级需求。"
+- id: feature2Name
+  translation: "机器人研发"
+- id: feature2Desc
+  translation: "拥有完整自主研发实力，深耕仿生四足机器人、升降模组、AI视觉云台、激光作业系统核心技术，完成结构、硬件、算法、功能全链路开发迭代，可定制各类智能机器人产品。"
+- id: feature3Name
+  translation: "智能制造"
+- id: feature3Desc
+  translation: "搭建标准化智能制造体系，实现机器人整机装配、精密检测、老化测试一体化量产。严苛品控保障产品稳定安全，高效承接标准及定制批量订单，实现研产高效联动。"
+- id: feature4Name
+  translation: "AI视觉算法"
+- id: feature4Desc
+  translation: "自研高精度AI视觉算法，支持物品识别、杂草甄别、蚊虫追踪、人体避障等功能。适配多视角作业，精准区分目标与无关物体，软硬件双重防护，作业精准、安全可靠。"
+- id: feature5Name
+  translation: "机器人销售"
+- id: feature5Desc
+  translation: "线上线下一体化销售，主营自研寻物、除草、高低空灭蚊全系机器人。面向家庭、园区、商用场景提供整机销售、定制采购及全套售后维保服务，全程保障用户体验。"
+- id: feature6Name
+  translation: "机器人招商"
+- id: feature6Desc
+  translation: "全国开放机器人项目招商，招募区域代理、经销商及创业合伙人。源头自研自产、利润充足、门槛低，总部全程提供产品、技术、营销、售后赋能，携手共享AI市场红利。"
