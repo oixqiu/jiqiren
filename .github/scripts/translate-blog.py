@@ -161,8 +161,9 @@ def translate_one(src_rel: pathlib.Path):
                 fm_t[key] = f'"{tr[lang]}"'
         # 翻译正文
         lang_body = translate_body_multi(body)[lang]
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        dst.write_text(render_front_matter(fm_t) + lang_body + "\n", encoding="utf-8")
+        if not DRY_RUN:
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text(render_front_matter(fm_t) + lang_body + "\n", encoding="utf-8")
         new_cnt += 1
     return new_cnt, skip_cnt
 
