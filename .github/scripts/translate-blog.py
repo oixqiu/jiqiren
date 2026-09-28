@@ -27,7 +27,7 @@ import urllib.error
 import pathlib
 
 SRC = "zh"
-LANGS = ["en", "fr", "de", "it", "es", "ar", "ja", "ko"]
+LANGS = ["en", "fr", "de", "it", "es", "ar", "ja", "ko", "ru"]
 FROM = "zh-Hans"
 ENDPOINT = (
     "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0"

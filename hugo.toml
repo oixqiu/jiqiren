@@ -299,6 +299,39 @@ enableRobotsTXT = true
 
   [languages.ko.permalinks]
     blog = "/ko/blog/:year/:month/:contentbasename/"
+[languages.ru]
+  locale = "ru-RU"
+  label = "Русский"
+  weight = 10
+  contentDir = "content/ru"
+  title = "Робототехнический Альянс"
+  description = "Робототехнический Альянс - jiqiren.gs.cn"
+
+  [languages.ru.menu]
+    [[languages.ru.menu.main]]
+      name = "Главная"
+      url = "/ru/"
+      weight = 1
+    [[languages.ru.menu.main]]
+      name = "О нас"
+      url = "/ru/about/"
+      weight = 2
+    [[languages.ru.menu.main]]
+      name = "Продукция"
+      url = "/ru/products/"
+      weight = 3
+    [[languages.ru.menu.main]]
+      name = "Новости"
+      url = "/ru/blog/"
+      weight = 4
+    [[languages.ru.menu.main]]
+      name = "Контакты"
+      url = "/ru/contact/"
+      weight = 5
+
+  [languages.ru.permalinks]
+    blog = "/ru/blog/:year/:month/:contentbasename/"
+
 
   [languages.ko.menu]
     [[languages.ko.menu.main]]
