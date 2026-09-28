@@ -1,0 +1,41 @@
+# 站点级 i18n（机器翻译之外的官方文案由人工提供）
+- id: backToProducts
+  translation: "Torna ai prodotti"
+- id: clientsTitle
+  translation: "Partner potenziali"
+- id: carousel1Title
+  translation: "Soluzioni di robotica intelligente"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>Robot industriali completi e componenti chiave</li><li>Automazione e ammodernamento intelligente delle linee produttive</li><li>Visione IA, algoritmi e piattaforme cloud</li><li>Assistenza tecnica 24 ore su 24, 7 giorni su 7</li></ul>"
+- id: carousel2Title
+  translation: "Accelerare la produzione intelligente"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>Soluzioni complete per le aziende manifatturiere</li><li>Stazioni robotiche e linee flessibili</li><li>Gestione della produzione basata sui dati</li></ul>"
+- id: carousel3Title
+  translation: "Algoritmi IA e sviluppo personalizzato"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>Visione industriale e algoritmi di percezione</li><li>Sviluppo applicativo personalizzato per settore</li><li>Dalla progettazione alla consegna</li></ul>"
+- id: feature1Name
+  translation: "Soluzioni di settore"
+- id: feature1Desc
+  translation: "Specializzati nelle applicazioni robotizzate IA per scenari domestici, da giardino, da parco e commerciali, offriamo soluzioni chiavi in mano. Copriamo ricerca oggetti, diserbo laser, lotta intelligente alle zanzare e disinfezione, adattando le soluzioni alle esigenze di modernizzazione intelligente."
+- id: feature2Name
+  translation: "Ricerca e sviluppo robotica"
+- id: feature2Desc
+  translation: "Disponiamo di capacità di R&S indipendenti e complete. Esperti in robot quadrupedi biomimetici, moduli di sollevamento, gimbal di visione IA e sistemi laser, sviluppiamo strutture, hardware, algoritmi e funzioni in modo iterativo, con prodotti personalizzabili."
+- id: feature3Name
+  translation: "Produzione intelligente"
+- id: feature3Desc
+  translation: "Abbiamo creato un sistema di produzione intelligente standardizzato: assemblaggio, ispezione di precisione e test di invecchiamento integrati. Controllo qualità rigoroso per prodotti stabili e sicuri, con gestione efficiente di ordini standard e personalizzati."
+- id: feature4Name
+  translation: "Algoritmi di visione IA"
+- id: feature4Desc
+  translation: "Algoritmi di visione IA ad alta precisione sviluppati internamente: riconoscimento oggetti, identificazione erbacce, tracciamento zanzare e prevenzione ostacoli umani. Adatti a più angoli di lavoro, distinguono con precisione i target con doppia protezione software/hardware."
+- id: feature5Name
+  translation: "Vendita di robot"
+- id: feature5Desc
+  translation: "Vendita integrata online e offline dell'intera gamma di robot sviluppati internamente: ricerca oggetti, diserbo e anti-zanzare alta/bassa quota. Per casa, parco e commercio: vendita, acquisti personalizzati e assistenza post-vendita completa."
+- id: feature6Name
+  translation: "Franchising robotica"
+- id: feature6Desc
+  translation: "Apriamo franchising nazionali: agenti regionali, distributori e partner imprenditoriali. R&S e produzione proprie, margini adeguati e bassa soglia d'ingresso; la sede fornisce supporto completo su prodotto, tecnologia, marketing e post-vendita."

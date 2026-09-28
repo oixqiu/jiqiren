@@ -1,7 +1,5 @@
 weight: 1
-name: "行业解决方案"
-name_en: "Industry Solutions"
+name: "feature1Name"
 icon: "fas fa-cogs"
 url: ""
-description: "专注AI机器人场景应用，针对家用、庭院、园区、商用等场景，提供一站式定制化解决方案。覆盖智能寻物、激光除草、智能灭蚊、消杀作业等领域，按需适配方案、落地部署，解决场景智能化升级需求。"
-description_en: "Focusing on AI robot scenario applications, we provide customized one-stop solutions for household, courtyard, park and commercial scenarios. Covering intelligent item searching, laser weeding, intelligent mosquito killing and disinfection operations, we deliver tailored deployment to meet intelligent upgrading demands."
+description: "feature1Desc"

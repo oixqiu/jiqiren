@@ -1,0 +1,41 @@
+# 站点级 i18n（机器翻译之外的官方文案由人工提供）
+- id: backToProducts
+  translation: "Zurück zu den Produkten"
+- id: clientsTitle
+  translation: "Potenzielle Partner"
+- id: carousel1Title
+  translation: "Intelligente Roboterlösungen"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>Industrieroboter und Kernkomponenten</li><li>Automatisierung und intelligente Modernisierung von Produktionslinien</li><li>KI-Vision, Algorithmen und Cloud-Plattformen</li><li>Technischer Support rund um die Uhr</li></ul>"
+- id: carousel2Title
+  translation: "Intelligente Fertigung vorantreiben"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>Komplettlösungen für produzierende Unternehmen</li><li>Roboterstationen und flexible Fertigungslinien</li><li>Datengesteuertes Produktionsmanagement</li></ul>"
+- id: carousel3Title
+  translation: "KI-Algorithmen und Sonderentwicklung"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>Maschinenvision und Wahrnehmungsalgorithmen</li><li>Branchenspezifische Anwendungsentwicklung</li><li>Vom Konzept bis zur Umsetzung</li></ul>"
+- id: feature1Name
+  translation: "Branchenlösungen"
+- id: feature1Desc
+  translation: "Wir fokussieren auf KI-Roboteranwendungen für Haushalt, Garten, Park und Gewerbe und bieten maßgeschneiderte Komplettlösungen. Von intelligenter Objektsuche, Laser-Unkrautentfernung und intelligenter Mückenbekämpfung bis zu Desinfektionsarbeiten – wir passen Lösungen an und setzen sie um, um den Anforderungen intelligenter Modernisierung gerecht zu werden."
+- id: feature2Name
+  translation: "Robotik-Forschung & Entwicklung"
+- id: feature2Desc
+  translation: "Wir verfügen über vollständige, eigenständige F&E-Kompetenz. Schwerpunkt auf bionischen Quadruped-Robotern, Hebe-Modulen, KI-Vision-Gimbals und Laser-Arbeitssystemen – iterative Entwicklung von Struktur, Hardware, Algorithmen und Funktionen sowie maßgeschneiderte Roboterprodukte."
+- id: feature3Name
+  translation: "Intelligente Fertigung"
+- id: feature3Desc
+  translation: "Wir haben ein standardisiertes intelligentes Fertigungssystem aufgebaut: Montage, Präzisionsprüfung und Alterungstests in einem. Strenge Qualitätskontrolle gewährleistet stabile und sichere Produkte; Standard- und Sonderaufträge werden effizient abgewickelt."
+- id: feature4Name
+  translation: "KI-Vision-Algorithmen"
+- id: feature4Desc
+  translation: "Selbst entwickelte KI-Visionsalgorithmen mit hoher Präzision unterstützen Objekterkennung, Unkrautunterscheidung, Mückenverfolgung und Personen-Kollisionsvermeidung. Mehrwinkel-Einsatz, präzise Zielunterscheidung, doppelter Software-/Hardware-Schutz."
+- id: feature5Name
+  translation: "Robotervertrieb"
+- id: feature5Desc
+  translation: "Integrierter Online- und Offline-Vertrieb der gesamten Eigenentwicklung: Such-, Unkraut- und Hoch-/Tiefflug-Mückenroboter. Für Haushalt, Park und Gewerbe: Verkauf, kundenspezifische Beschaffung und vollständiger Kundendienst."
+- id: feature6Name
+  translation: "Roboter-Franchise"
+- id: feature6Desc
+  translation: "Wir suchen landesweit Regionalvertreter, Händler und Geschäftspartner. Eigene F&E und Produktion, ausreichende Margen, niedrige Einstiegshürden – die Zentrale unterstützt mit Produkt, Technik, Marketing und After-Sales."

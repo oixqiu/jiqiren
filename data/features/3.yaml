@@ -1,7 +1,5 @@
 weight: 3
-name: "智能制造"
-name_en: "Intelligent Manufacturing"
+name: "feature3Name"
 icon: "fas fa-industry"
 url: ""
-description: "搭建标准化智能制造体系，实现机器人整机装配、精密检测、老化测试一体化量产。严苛品控保障产品稳定安全，高效承接标准及定制批量订单，实现研产高效联动。"
-description_en: "We have built a standardized intelligent manufacturing system, integrating robot assembly, precision inspection and aging testing. Strict quality control ensures stable and safe products. We efficiently undertake standardized and customized bulk orders to realize integrated R&D and production."
+description: "feature3Desc"

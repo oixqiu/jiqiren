@@ -33,13 +33,8 @@
                             {{ with $element.url }}
                             </a>
                             {{ end }}
-                            {{ if eq $lang "en" }}
-                            <h3>{{ $element.name_en | markdownify }}</h3>
-                            <p>{{ $element.description_en | markdownify }}</p>
-                            {{ else }}
-                            <h3>{{ $element.name | markdownify }}</h3>
-                            <p>{{ $element.description | markdownify }}</p>
-                            {{ end }}
+                            <h3>{{ i18n $element.name | markdownify }}</h3>
+                            <p>{{ i18n $element.description | markdownify }}</p>
                         </div>
                     </div>
                 {{ end }}

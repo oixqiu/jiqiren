@@ -1,0 +1,41 @@
+# 站点级 i18n（机器翻译之外的官方文案由人工提供）
+- id: backToProducts
+  translation: "製品一覧に戻る"
+- id: clientsTitle
+  translation: "提携候補先"
+- id: carousel1Title
+  translation: "スマートロボットソリューション"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>産業用ロボット本体と主要部品</li><li>生産ラインの自動化・スマート化</li><li>AIビジョン・アルゴリズム・クラウドプラットフォーム</li><li>24時間365日テクニカルサポート</li></ul>"
+- id: carousel2Title
+  translation: "スマート製造の進化を支援"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>製造業向けトータルソリューション</li><li>ロボットワークステーションとフレキシブルライン</li><li>データ駆動型の生産管理</li></ul>"
+- id: carousel3Title
+  translation: "AIアルゴリズムとカスタム開発"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>マシンビジョンと認識アルゴリズム</li><li>業界向けカスタムアプリ開発</li><li>設計から納品まで一貫対応</li></ul>"
+- id: feature1Name
+  translation: "分野別ソリューション"
+- id: feature1Desc
+  translation: "家庭・庭園・公園・商業施設向けのAIロボット応用に特化し、ワンストップのカスタムソリューションを提供。スマートな物体探索、レーザー除草、スマート蚊対策、除菌作業などをカバーし、各シーンのスマート化ニーズに応えます。"
+- id: feature2Name
+  translation: "ロボット研究開発"
+- id: feature2Desc
+  translation: "自社で一貫した研究開発能力を保有。生体模倣四足ロボット、昇降モジュール、AIビジョン雲台、レーザー作業システムを深耕し、構造・ハードウェア・アルゴリズム・機能を全工程で開発・改善。各種ロボット製品をカスタマイズ可能です。"
+- id: feature3Name
+  translation: "スマート製造"
+- id: feature3Desc
+  translation: "標準化されたスマート製造体制を構築し、組立・精密検査・エージングテストの一貫量産を実現。厳格な品質管理で安定・安全な製品を保証し、標準品・カスタムの量産注文を効率的に受注します。"
+- id: feature4Name
+  translation: "AIビジョンアルゴリズム"
+- id: feature4Desc
+  translation: "自社開発の高精度AIビジョンアルゴリズム。物体認識、雑草判別、蚊追跡、人体回避などをサポート。多視点作業に適応し、対象と無関係な物体を正確に判別、ソフト・ハード二重保護で正確・安全な作業を実現します。"
+- id: feature5Name
+  translation: "ロボット販売"
+- id: feature5Desc
+  translation: "オンライン・オフライン一体型販売。自社開発の物体探索・除草・高低空蚊対策ロボットを主力に、家庭・公園・商業向けに本体販売、カスタム調達、フルアフターサービスを提供します。"
+- id: feature6Name
+  translation: "ロボットフランチャイズ"
+- id: feature6Desc
+  translation: "全国でロボット事業のフランチャイズを募集。地域代理店・販売店・起業パートナーを募集中。自社開発・自社生産、十分な利益、低い参入障壁。本社が製品・技術・マーケティング・アフターサービスを全面的に支援します。"

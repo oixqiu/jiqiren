@@ -1,14 +1,16 @@
 # ============================================================
 #  jiqiren.gs.cn — 机器人联盟官网（Hugo + universal 主题）
-#  多语言：中文（默认，站根路径）+ English（/en/）
+#  多语言：中文（默认，站根路径）+ English / Français / Deutsch /
+#          Italiano / Español / العربية / 日本語 / 한국어
 #  部署：GitHub Pages（GitHub Actions 自动构建发布）
+#  博客翻译：GitHub Actions 调用微软翻译 API 自动生成各语言版本
 # ============================================================
 
 baseURL = "https://jiqiren.gs.cn/"
 title = "机器人联盟"
 theme = "hugo-universal-theme"
 
-# 默认语言：中文（站根路径），英文在 /en/
+# 默认语言：中文（站根路径），其他语言在各自子路径
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 
@@ -30,6 +32,9 @@ enableRobotsTXT = true
   contentDir = "content/zh"
   title = "机器人联盟"
   description = "机器人联盟 - jiqiren.gs.cn"
+
+  [languages.zh.permalinks]
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.zh.menu]
     [[languages.zh.menu.main]]
@@ -61,6 +66,9 @@ enableRobotsTXT = true
   title = "Robotics Alliance"
   description = "Robotics Alliance - jiqiren.gs.cn"
 
+  [languages.en.permalinks]
+    blog = "/en/blog/:year/:month/:contentbasename/"
+
   [languages.en.menu]
     [[languages.en.menu.main]]
       name = "Home"
@@ -81,6 +89,237 @@ enableRobotsTXT = true
     [[languages.en.menu.main]]
       name = "Contact"
       url = "/en/contact/"
+      weight = 5
+
+[languages.fr]
+  locale = "fr-FR"
+  label = "Français"
+  weight = 3
+  contentDir = "content/fr"
+  title = "Alliance Robotique"
+  description = "Alliance Robotique - jiqiren.gs.cn"
+
+  [languages.fr.permalinks]
+    blog = "/fr/blog/:year/:month/:contentbasename/"
+
+  [languages.fr.menu]
+    [[languages.fr.menu.main]]
+      name = "Accueil"
+      url = "/fr/"
+      weight = 1
+    [[languages.fr.menu.main]]
+      name = "À propos"
+      url = "/fr/about/"
+      weight = 2
+    [[languages.fr.menu.main]]
+      name = "Produits"
+      url = "/fr/products/"
+      weight = 3
+    [[languages.fr.menu.main]]
+      name = "Actualités"
+      url = "/fr/blog/"
+      weight = 4
+    [[languages.fr.menu.main]]
+      name = "Contact"
+      url = "/fr/contact/"
+      weight = 5
+
+[languages.de]
+  locale = "de-DE"
+  label = "Deutsch"
+  weight = 4
+  contentDir = "content/de"
+  title = "Roboter-Allianz"
+  description = "Roboter-Allianz - jiqiren.gs.cn"
+
+  [languages.de.permalinks]
+    blog = "/de/blog/:year/:month/:contentbasename/"
+
+  [languages.de.menu]
+    [[languages.de.menu.main]]
+      name = "Startseite"
+      url = "/de/"
+      weight = 1
+    [[languages.de.menu.main]]
+      name = "Über uns"
+      url = "/de/about/"
+      weight = 2
+    [[languages.de.menu.main]]
+      name = "Produkte"
+      url = "/de/products/"
+      weight = 3
+    [[languages.de.menu.main]]
+      name = "Neuigkeiten"
+      url = "/de/blog/"
+      weight = 4
+    [[languages.de.menu.main]]
+      name = "Kontakt"
+      url = "/de/contact/"
+      weight = 5
+
+[languages.it]
+  locale = "it-IT"
+  label = "Italiano"
+  weight = 5
+  contentDir = "content/it"
+  title = "Alleanza Robotica"
+  description = "Alleanza Robotica - jiqiren.gs.cn"
+
+  [languages.it.permalinks]
+    blog = "/it/blog/:year/:month/:contentbasename/"
+
+  [languages.it.menu]
+    [[languages.it.menu.main]]
+      name = "Home"
+      url = "/it/"
+      weight = 1
+    [[languages.it.menu.main]]
+      name = "Chi siamo"
+      url = "/it/about/"
+      weight = 2
+    [[languages.it.menu.main]]
+      name = "Prodotti"
+      url = "/it/products/"
+      weight = 3
+    [[languages.it.menu.main]]
+      name = "News"
+      url = "/it/blog/"
+      weight = 4
+    [[languages.it.menu.main]]
+      name = "Contatti"
+      url = "/it/contact/"
+      weight = 5
+
+[languages.es]
+  locale = "es-ES"
+  label = "Español"
+  weight = 6
+  contentDir = "content/es"
+  title = "Alianza Robótica"
+  description = "Alianza Robótica - jiqiren.gs.cn"
+
+  [languages.es.permalinks]
+    blog = "/es/blog/:year/:month/:contentbasename/"
+
+  [languages.es.menu]
+    [[languages.es.menu.main]]
+      name = "Inicio"
+      url = "/es/"
+      weight = 1
+    [[languages.es.menu.main]]
+      name = "Nosotros"
+      url = "/es/about/"
+      weight = 2
+    [[languages.es.menu.main]]
+      name = "Productos"
+      url = "/es/products/"
+      weight = 3
+    [[languages.es.menu.main]]
+      name = "Noticias"
+      url = "/es/blog/"
+      weight = 4
+    [[languages.es.menu.main]]
+      name = "Contacto"
+      url = "/es/contact/"
+      weight = 5
+
+[languages.ar]
+  locale = "ar"
+  label = "العربية"
+  weight = 7
+  contentDir = "content/ar"
+  title = "تحالف الروبوتات"
+  description = "تحالف الروبوتات - jiqiren.gs.cn"
+
+  [languages.ar.permalinks]
+    blog = "/ar/blog/:year/:month/:contentbasename/"
+
+  [languages.ar.menu]
+    [[languages.ar.menu.main]]
+      name = "الرئيسية"
+      url = "/ar/"
+      weight = 1
+    [[languages.ar.menu.main]]
+      name = "من نحن"
+      url = "/ar/about/"
+      weight = 2
+    [[languages.ar.menu.main]]
+      name = "المنتجات"
+      url = "/ar/products/"
+      weight = 3
+    [[languages.ar.menu.main]]
+      name = "الأخبار"
+      url = "/ar/blog/"
+      weight = 4
+    [[languages.ar.menu.main]]
+      name = "اتصل بنا"
+      url = "/ar/contact/"
+      weight = 5
+
+[languages.ja]
+  locale = "ja-JP"
+  label = "日本語"
+  weight = 8
+  contentDir = "content/ja"
+  title = "ロボット連盟"
+  description = "ロボット連盟 - jiqiren.gs.cn"
+
+  [languages.ja.permalinks]
+    blog = "/ja/blog/:year/:month/:contentbasename/"
+
+  [languages.ja.menu]
+    [[languages.ja.menu.main]]
+      name = "ホーム"
+      url = "/ja/"
+      weight = 1
+    [[languages.ja.menu.main]]
+      name = "会社概要"
+      url = "/ja/about/"
+      weight = 2
+    [[languages.ja.menu.main]]
+      name = "製品"
+      url = "/ja/products/"
+      weight = 3
+    [[languages.ja.menu.main]]
+      name = "ニュース"
+      url = "/ja/blog/"
+      weight = 4
+    [[languages.ja.menu.main]]
+      name = "お問い合わせ"
+      url = "/ja/contact/"
+      weight = 5
+
+[languages.ko]
+  locale = "ko-KR"
+  label = "한국어"
+  weight = 9
+  contentDir = "content/ko"
+  title = "로봇 연맹"
+  description = "로봇 연맹 - jiqiren.gs.cn"
+
+  [languages.ko.permalinks]
+    blog = "/ko/blog/:year/:month/:contentbasename/"
+
+  [languages.ko.menu]
+    [[languages.ko.menu.main]]
+      name = "홈"
+      url = "/ko/"
+      weight = 1
+    [[languages.ko.menu.main]]
+      name = "회사 소개"
+      url = "/ko/about/"
+      weight = 2
+    [[languages.ko.menu.main]]
+      name = "제품"
+      url = "/ko/products/"
+      weight = 3
+    [[languages.ko.menu.main]]
+      name = "뉴스"
+      url = "/ko/blog/"
+      weight = 4
+    [[languages.ko.menu.main]]
+      name = "문의하기"
+      url = "/ko/contact/"
       weight = 5
 
 # ---------------- 顶栏电话/邮箱 ----------------
@@ -214,6 +453,3 @@ enableRobotsTXT = true
   tag = "tags"
   author = "authors"
 
-# ---------------- 链接格式 ----------------
-[permalinks]
-  blog = "/blog/:year/:month/:contentbasename/"

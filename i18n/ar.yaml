@@ -1,0 +1,119 @@
+# 站点级 i18n（阿拉伯语完整 UI 词；主题无 ar.yaml）
+- id: home
+  translation: "الرئيسية"
+- id: templateBy
+  translation: "القالب بواسطة"
+- id: portedBy
+  translation: "تم التحويل إلى Hugo بواسطة"
+- id: contactGoTo
+  translation: "الانتقال إلى صفحة الاتصال"
+- id: contactAddrTitle
+  translation: "العنوان"
+- id: contactTitle
+  translation: "اتصل بنا"
+- id: contactForm
+  translation: "نموذج الاتصال"
+- id: contactName
+  translation: "اسمك"
+- id: contactMail
+  translation: "بريدك الإلكتروني"
+- id: contactMessage
+  translation: "رسالتك"
+- id: contactSend
+  translation: "إرسال الرسالة"
+- id: navHome
+  translation: "الانتقال إلى الصفحة الرئيسية"
+- id: navToggle
+  translation: "تبديل التنقل"
+- id: categoriesTitle
+  translation: "التصنيفات"
+- id: searchTitle
+  translation: "البحث"
+- id: tagsTitle
+  translation: "الوسوم"
+- id: continueReading
+  translation: "مواصلة القراءة"
+- id: readMore
+  translation: "اقرأ المزيد"
+- id: authorBy
+  translation: "بقلم"
+- id: recentPosts
+  translation: "أحدث المشاركات"
+- id: aboutUs
+  translation: "من نحن"
+- id: newer
+  translation: "أحدث"
+- id: older
+  translation: "أقدم"
+- id: publishedOn
+  translation: "بتاريخ"
+- id: 404Error
+  translation: "خطأ 404: الصفحة غير موجودة"
+- id: 404Message
+  translation: "نعتذر – هذه الصفحة لم تعد موجودة"
+- id: 404NavHome
+  translation: "الانتقال إلى الصفحة الرئيسية"
+- id: January
+  translation: "يناير"
+- id: February
+  translation: "فبراير"
+- id: March
+  translation: "مارس"
+- id: April
+  translation: "أبريل"
+- id: May
+  translation: "مايو"
+- id: June
+  translation: "يونيو"
+- id: July
+  translation: "يوليو"
+- id: August
+  translation: "أغسطس"
+- id: September
+  translation: "سبتمبر"
+- id: October
+  translation: "أكتوبر"
+- id: November
+  translation: "نوفمبر"
+- id: December
+  translation: "ديسمبر"
+- id: backToProducts
+  translation: "العودة إلى المنتجات"
+- id: clientsTitle
+  translation: "شركاء محتملون"
+- id: carousel1Title
+  translation: "حلول الروبوتات الذكية"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>روبوتات صناعية متكاملة ومكونات أساسية</li><li>أتمتة وتحديث ذكي لخطوط الإنتاج</li><li>رؤية الذكاء الاصطناعي والخوارزميات والمنصات السحابية</li><li>دعم فني على مدار الساعة</li></ul>"
+- id: carousel2Title
+  translation: "تعزيز التصنيع الذكي"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>حلول شاملة لشركات التصنيع</li><li>محطات روبوتية وخطوط إنتاج مرنة</li><li>إدارة إنتاج مدفوعة بالبيانات</li></ul>"
+- id: carousel3Title
+  translation: "خوارزميات الذكاء الاصطناعي والتطوير المخصص"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>رؤية صناعية وخوارزميات إدراك</li><li>تطوير تطبيقات مخصصة لكل قطاع</li><li>من التصميم إلى التسليم</li></ul>"
+- id: feature1Name
+  translation: "حلول قطاعية"
+- id: feature1Desc
+  translation: "متخصصون في تطبيقات الروبوتات الذكية للمنازل والحدائق والمتنزهات والاستخدامات التجارية، نقدم حلولاً جاهزة شاملة. تغطي البحث عن الأشياء، وإزالة الأعشاب بالليزر، ومكافحة البعوض الذكية، وأعمال التعقيم، مع تكييف الحلول وتنفيذها لتلبية احتياجات التحول الذكي."
+- id: feature2Name
+  translation: "البحث والتطوير الروبوتي"
+- id: feature2Desc
+  translation: "نمتلك قدرات بحث وتطوير مستقلة وكاملة. خبراء في الروبوتات رباعية الأرجل المحاكية للطبيعة، ووحدات الرفع، ومثبتات الرؤية الذكية، وأنظمة الليزر، نطوّر الهياكل والأجهزة والخوارزميات والوظائف بشكل متكامل مع منتجات قابلة للتخصيص."
+- id: feature3Name
+  translation: "التصنيع الذكي"
+- id: feature3Desc
+  translation: "أنشأنا نظام تصنيع ذكي موحد: تجميع، فحص دقيق، واختبارات تقادم متكاملة. رقابة جودة صارمة تضمن منتجات مستقرة وآمنة، مع استيعاب فعال للطلبات القياسية والمخصصة."
+- id: feature4Name
+  translation: "خوارزميات رؤية الذكاء الاصطناعي"
+- id: feature4Desc
+  translation: "خوارزميات رؤية ذكاء اصطناعي عالية الدقة طورناها داخلياً: التعرف على الأشياء، تمييز الأعشاب، تتبع البعوض، وتجنب العوائق البشرية. قابلة للتكيف مع زوايا متعددة، تميز الأهداف بدقة مع حماية مزدوجة برمجياً ومادياً."
+- id: feature5Name
+  translation: "مبيعات الروبوتات"
+- id: feature5Desc
+  translation: "مبيعات متكاملة عبر الإنترنت وخارجها لكامل تشكيلة الروبوتات المطورة ذاتياً: البحث عن الأشياء، إزالة الأعشاب، ومكافحة البعوض عالي/منخفض الارتفاع. للمنازل والمتنزهات والاستخدامات التجارية: بيع المعدات، شراء مخصص، وخدمة ما بعد البيع الكاملة."
+- id: feature6Name
+  translation: "امتياز الروبوتات"
+- id: feature6Desc
+  translation: "نفتح الامتياز على مستوى الدولة: وكلاء إقليميون وموزعون وشركاء رواد أعمال. بحث وتطوير وإنتاج ذاتي، هوامش كافية وعتبة دخول منخفضة؛ يوفر المركز دعماً كاملاً في المنتج والتقنية والتسويق وما بعد البيع."

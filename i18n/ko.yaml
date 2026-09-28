@@ -1,0 +1,119 @@
+# 站点级 i18n（韩语完整 UI 词；主题无 ko.yaml）
+- id: home
+  translation: "홈"
+- id: templateBy
+  translation: "템플릿 제공"
+- id: portedBy
+  translation: "Hugo로 전환"
+- id: contactGoTo
+  translation: "문의 페이지로 이동"
+- id: contactAddrTitle
+  translation: "주소"
+- id: contactTitle
+  translation: "문의하기"
+- id: contactForm
+  translation: "문의 양식"
+- id: contactName
+  translation: "이름"
+- id: contactMail
+  translation: "이메일"
+- id: contactMessage
+  translation: "메시지"
+- id: contactSend
+  translation: "메시지 보내기"
+- id: navHome
+  translation: "홈페이지로 이동"
+- id: navToggle
+  translation: "내비게이션 전환"
+- id: categoriesTitle
+  translation: "카테고리"
+- id: searchTitle
+  translation: "검색"
+- id: tagsTitle
+  translation: "태그"
+- id: continueReading
+  translation: "계속 읽기"
+- id: readMore
+  translation: "더 읽기"
+- id: authorBy
+  translation: "작성자"
+- id: recentPosts
+  translation: "최근 게시물"
+- id: aboutUs
+  translation: "회사 소개"
+- id: newer
+  translation: "최신"
+- id: older
+  translation: "이전"
+- id: publishedOn
+  translation: "게시일"
+- id: 404Error
+  translation: "오류 404: 페이지를 찾을 수 없습니다"
+- id: 404Message
+  translation: "죄송합니다 – 이 페이지는 더 이상 존재하지 않습니다"
+- id: 404NavHome
+  translation: "홈페이지로 이동"
+- id: January
+  translation: "1월"
+- id: February
+  translation: "2월"
+- id: March
+  translation: "3월"
+- id: April
+  translation: "4월"
+- id: May
+  translation: "5월"
+- id: June
+  translation: "6월"
+- id: July
+  translation: "7월"
+- id: August
+  translation: "8월"
+- id: September
+  translation: "9월"
+- id: October
+  translation: "10월"
+- id: November
+  translation: "11월"
+- id: December
+  translation: "12월"
+- id: backToProducts
+  translation: "제품으로 돌아가기"
+- id: clientsTitle
+  translation: "잠재 파트너"
+- id: carousel1Title
+  translation: "스마트 로봇 솔루션"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>산업용 로봇 본체와 핵심 부품</li><li>생산 라인 자동화 및 스마트화</li><li>AI 비전·알고리즘·클라우드 플랫폼</li><li>24시간 365일 기술 지원</li></ul>"
+- id: carousel2Title
+  translation: "스마트 제조 혁신 지원"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>제조 기업을 위한 종합 솔루션</li><li>로봇 워크스테이션과 유연 생산 라인</li><li>데이터 기반 생산 관리</li></ul>"
+- id: carousel3Title
+  translation: "AI 알고리즘 및 맞춤 개발"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>머신 비전 및 인식 알고리즘</li><li>업종별 맞춤 애플리케이션 개발</li><li>설계부터 납품까지 원스톱</li></ul>"
+- id: feature1Name
+  translation: "업종별 솔루션"
+- id: feature1Desc
+  translation: "가정, 정원, 공원, 상업 공간을 위한 AI 로봇 응용 전문 기업으로 원스톱 맞춤 솔루션을 제공합니다. 스마트 물건 찾기, 레이저 제초, 스마트 모기 퇴치, 소독 작업을 포괄하며 맞춤 적용과 구축으로 스마트화 요구를 해결합니다."
+- id: feature2Name
+  translation: "로봇 연구개발"
+- id: feature2Desc
+  translation: "자체 완결형 연구개발 역량을 보유하고 있습니다. 생체모방 4족 보행 로봇, 승강 모듈, AI 비전 짐벌, 레이저 작업 시스템을 심층 연구하며 구조·하드웨어·알고리즘·기능의 전 과정 개발과 반복 개선을 수행하고 다양한 지능형 로봇을 맞춤 제작합니다."
+- id: feature3Name
+  translation: "스마트 제조"
+- id: feature3Desc
+  translation: "표준화된 스마트 제조 체계를 구축하여 로봇 조립, 정밀 검사, 에이징 테스트의 일체화 양산을 실현했습니다. 엄격한 품질 관리로 안정적이고 안전한 제품을 보장하며 표준 및 맞춤 대량 주문을 효율적으로 수주합니다."
+- id: feature4Name
+  translation: "AI 비전 알고리즘"
+- id: feature4Desc
+  translation: "자체 개발한 고정밀 AI 비전 알고리즘은 물체 인식, 잡초 판별, 모기 추적, 인체 회피 등을 지원합니다. 다각도 작업에 적응하며 목표와 무관한 객체를 정확히 구분하고 소프트웨어·하드웨어 이중 보호로 정확하고 안전한 작업을 보장합니다."
+- id: feature5Name
+  translation: "로봇 판매"
+- id: feature5Desc
+  translation: "온라인·오프라인 통합 판매 체계로 자체 개발한 물건 찾기, 제초, 고·저공 모기 퇴치 전 라인 로봇을 판매합니다. 가정·공원·상업 공간에 본체 판매, 맞춤 구매, 완전한 애프터서비스 제공."
+- id: feature6Name
+  translation: "로봇 프랜차이즈"
+- id: feature6Desc
+  translation: "전국에서 로봇 사업 프랜차이즈를 모집합니다. 지역 에이전트, 딜러, 창업 파트너를 모집합니다. 자체 연구개발·자체 생산, 충분한 이윤, 낮은 진입 장벽. 본사가 제품·기술·마케팅·애프터서비스를 전면 지원합니다."

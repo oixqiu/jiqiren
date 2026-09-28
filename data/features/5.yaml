@@ -1,7 +1,5 @@
 weight: 5
-name: "机器人销售"
-name_en: "Robot Sales"
+name: "feature5Name"
 icon: "fas fa-cart-shopping"
 url: ""
-description: "线上线下一体化销售，主营自研寻物、除草、高低空灭蚊全系机器人。面向家庭、园区、商用场景提供整机销售、定制采购及全套售后维保服务，全程保障用户体验。"
-description_en: "We provide online and offline integrated sales services for full-line self-developed robots including item-searching, weeding and high/low-altitude mosquito-killing robots. We offer equipment sales, customized procurement and complete after-sales maintenance for household, park and commercial scenarios."
+description: "feature5Desc"

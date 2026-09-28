@@ -1,0 +1,41 @@
+# 站点级 i18n（机器翻译之外的官方文案由人工提供）
+- id: backToProducts
+  translation: "Retour aux produits"
+- id: clientsTitle
+  translation: "Partenaires potentiels"
+- id: carousel1Title
+  translation: "Solutions de robotique intelligente"
+- id: carousel1Desc
+  translation: "<ul class=\"list-style-none\"><li>Robots industriels complets et composants clés</li><li>Automatisation et modernisation intelligente des lignes de production</li><li>Vision IA, algorithmes et plateformes cloud</li><li>Assistance technique 24h/24 et 7j/7</li></ul>"
+- id: carousel2Title
+  translation: "Accélérer la modernisation de la fabrication intelligente"
+- id: carousel2Desc
+  translation: "<ul class=\"list-style-none\"><li>Solutions complètes pour les entreprises industrielles</li><li>Stations robotisées et lignes de production flexibles</li><li>Gestion de production pilotée par les données</li></ul>"
+- id: carousel3Title
+  translation: "Algorithmes IA et développement sur mesure"
+- id: carousel3Desc
+  translation: "<ul class=\"list-style-none\"><li>Vision industrielle et algorithmes de perception</li><li>Développement d'applications sur mesure par secteur</li><li>De la conception à la mise en service</li></ul>"
+- id: feature1Name
+  translation: "Solutions sectorielles"
+- id: feature1Desc
+  translation: "Spécialisés dans les applications de robots IA pour les scénarios domestiques, de jardin, de parc et commerciaux, nous proposons des solutions clé en main. Couvrant la recherche d'objets, le désherbage au laser, la lutte anti-moustiques intelligente et les opérations de désinfection, nous adaptons et déployons les solutions pour répondre aux besoins de modernisation intelligente."
+- id: feature2Name
+  translation: "R&D robotique"
+- id: feature2Desc
+  translation: "Nous disposons de capacités complètes de R&D indépendante. Experts en robots quadrupèdes bioniques, modules de levage, cardans de vision IA et systèmes laser, nous développons et itérons structures, matériel, algorithmes et fonctions de bout en bout, avec des produits personnalisables."
+- id: feature3Name
+  translation: "Fabrication intelligente"
+- id: feature3Desc
+  translation: "Nous avons mis en place un système de fabrication intelligente standardisé, intégrant assemblage, inspection de précision et tests de vieillissement. Un contrôle qualité strict garantit des produits stables et sûrs, avec une capacité de production efficace pour les commandes en série standard et sur mesure."
+- id: feature4Name
+  translation: "Algorithmes de vision IA"
+- id: feature4Desc
+  translation: "Nos algorithmes de vision IA haute précision prennent en charge la reconnaissance d'objets, l'identification des mauvaises herbes, le suivi des moustiques et l'évitement d'obstacles humains. Adaptés aux opérations multi-angles, ils distinguent précisément les cibles avec une double protection matérielle et logicielle."
+- id: feature5Name
+  translation: "Vente de robots"
+- id: feature5Desc
+  translation: "Vente intégrée en ligne et hors ligne de toute la gamme de robots développés en interne : recherche d'objets, désherbage et anti-moustiques haute/basse altitude. Pour les foyers, les parcs et les usages commerciaux : vente de machines, achats sur mesure et service après-vente complet."
+- id: feature6Name
+  translation: "Franchise robotique"
+- id: feature6Desc
+  translation: "Nous recrutons des agents régionaux, distributeurs et partenaires entrepreneurs à travers le pays. R&D et production en interne, marges confortables et faible barrière d'entrée ; le siège fournit un accompagnement complet en produits, technologie, marketing et après-vente."
