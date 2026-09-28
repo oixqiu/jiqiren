@@ -4,7 +4,7 @@ description = "针对低空飞行蚊虫消杀的高端户外智能设备，仿�
 keywords = ["灭蚊机器人", "激光灭蚊", "高空消杀", "人工智能", "户外驱蚊", "智能消杀"]
 weight = 10
 # banner 为产品主图路径，例如 "/img/products/laser-mosquito-killer.jpg"，留空则显示默认封面
-banner = ""
+banner = "/img/products/laser-mosquito-killer.jpg"
 +++
 
 # 人工智能高空版激光灭蚊虫机器人

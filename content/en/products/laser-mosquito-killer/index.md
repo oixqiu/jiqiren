@@ -4,7 +4,7 @@ description = "A high-end outdoor smart device targeting low-altitude flying mos
 keywords = ["mosquito killer robot", "laser mosquito killer", "elevated disinfection", "artificial intelligence", "outdoor pest control"]
 weight = 10
 # banner: product image path, e.g. "/img/products/laser-mosquito-killer.jpg"; leave empty to use the default cover
-banner = ""
+banner = "/img/products/laser-mosquito-killer.jpg"
 +++
 
 # AI Elevated Laser Mosquito Killer Robot

@@ -10,9 +10,9 @@
 {{- if and (isset .Params "banner") (ne .Params.banner "") -}}
   {{- $img = .Params.banner -}}
 {{- else -}}
-  {{- $matches := findRE `<img[^>]+src=["']([^"']+)["']` .Content -}}
+  {{- $matches := findRE `<img[^>]+src=["']?([^"'\s>]+)` .Content -}}
   {{- if gt (len $matches) 0 -}}
-    {{- $img = replaceRE `^.*src=["']([^"']+)["'].*$` "$1" (index $matches 0) -}}
+    {{- $img = replaceRE `^.*src=["']?([^"'\s>]+)` "$1" (index $matches 0) -}}
   {{- end -}}
 {{- end -}}
 {{- if eq $img "" -}}{{ $img = "img/placeholder.png" }}{{- end -}}
