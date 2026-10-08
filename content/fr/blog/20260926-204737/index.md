@@ -1,0 +1,9 @@
+---
+title: "20260926-2044-Robot-0370"
+date: 2026-09-26T20:47:37+08:00
+draft: false
+tags: ["机器人"]
+description: "En parlant juste des robots, je pense que les robots IA de contrôle des moustiques et de désherbation sont les plus susceptibles de devenir viraux rapidement parce qu’ils ont vraiment des points sensibles, parce que..."
+---
+
+En parlant juste de robots, je pense que les robots IA de lutte contre les moustiques et de désherbation vont rapidement devenir populaires car ils ont vraiment des points sensibles. Ce ne sont pas un robot unique dans un seul foyer, mais un robot IA placé dans le jardin. Il peut éliminer les moustiques dans un rayon de 20 mètres carrés, ce qui le rend particulièrement adapté pour l’achat dans les quartiers résidentiels. La meilleure solution de lutte contre les mauvaises herbes par IA est la location, similaire aux méthodes de récolte IA actuelles. En d’autres termes, vous pouvez dépenser un peu d’argent et cela devient adapté au désherbage. Nous appelons cela « fossé de dragon » ou « fossé de dragon ». De nombreuses fermes rurales nécessitent des crêtes et des fossés. C’est un type de canon pour tous les temps, de préférence sans roues, comme une marche à double culture. Ainsi, il peut s’adapter à divers environnements. Par exemple, dans un champ de maïs, les mauvaises herbes sont éliminées. Par exemple, les champs de coton sont des solutions plus simples — il suffit d’acheter une machine soi-même. Il suffit de le passer une seule fois, mais il peut falloir le faire trois ou quatre fois par an. Le coût le plus important est l’électricité, car elle a de la puissance de calcul pour identifier ces mauvaises herbes. Par exemple, je suis actuellement très prometteur d’explorer et d’obtenir des données de bas niveau, et cette entreprise possède déjà cette technologie. Nous pouvons collaborer et nous voulons vraiment enquêter. J’ai beaucoup d’idées à ce sujet.

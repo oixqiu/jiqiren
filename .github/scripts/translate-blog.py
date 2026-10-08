@@ -4,17 +4,19 @@
 jiqiren.gs.cn 多语言博客自动翻译脚本
 ====================================
 检测 content/zh/blog/ 下新增的中文文章，调用微软翻译 API 自动生成
-content/<lang>/blog/ 下的同名文章（en/fr/de/it/es/ar/ja/ko）。
+content/<lang>/blog/ 下的同名文章（en/fr/de/it/es/ar/ja/ko/ru）。
 
 特性：
 - 已翻译的语言版本已存在时跳过（不重复翻译、不覆盖人工润色稿）
-- 保留 front matter 中的 date/tags/image/banner 等字段，只翻译 title/description 与正文
+- front matter 支持 ---（YAML）与 +++（TOML）两种格式
+- 只翻译 title/description 与正文；date/tags/draft 等原样保留
+- 图片不复制：翻译版正文与 image 字段中的相对图片路径，自动改写为
+  指向中文站的绝对路径（/blog/年/月/文章目录/图片.jpg），全球共用同一张图
 - 正文按块翻译，保护 Markdown 图片/链接/代码块不被破坏
-- 静态页（about/contact/products 列表/产品详情）缺失时同样自动翻译生成
 - 无 API Key 时以 --dry-run 模式运行（只报告将翻译的文件）
 
 用法：
-  AZURE_TRANSLATOR_KEY=xxx AZURE_TRANSLATOR_REGION=xxx python3 translate-blog.py
+  AZURE_TRANSLATOR_KEY=xxx AZURE_TRANSLATOR_REGION=southeastasia python3 translate-blog.py
   python3 translate-blog.py --dry-run
 """
 import os
@@ -40,6 +42,9 @@ REGION = os.environ.get("AZURE_TRANSLATOR_REGION", "")
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 CONTENT = ROOT / "content"
 
+# 直连，不继承系统代理（GitHub runner 无代理；本地代理会导致超时）
+OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+
 
 def log(msg):
     print("[translate] " + msg, flush=True)
@@ -62,7 +67,7 @@ def translate(text):
         req.add_header("Content-Type", "application/json")
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(req, timeout=60) as resp:
+                with OPENER.open(req, timeout=30) as resp:
                     data = json.loads(resp.read().decode("utf-8"))[0]["translations"]
                     for t in data:
                         result[t["to"]] += t["text"]
@@ -79,33 +84,89 @@ def translate(text):
     return result
 
 
-def parse_front_matter(text):
-    """解析 +++ ... +++ 前的 front matter，返回 (front_matter_dict, body)。"""
-    m = re.match(r"^\+\+\+\n(.*?)\n\+\+\+\n?(.*)$", text, re.S)
+def split_front_matter(text):
+    """同时支持 ---（YAML）与 +++（TOML）front matter。
+    返回 (delimiter, fm_lines(list), body)；无 front matter 返回 (None, [], text)。"""
+    m = re.match(r"^(---|\+\+\+)\n(.*?)\n\1\n?(.*)$", text, re.S)
     if not m:
-        return None, text
-    fm_raw, body = m.group(1), m.group(2)
-    fm = {}
-    for line in fm_raw.splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
+        return None, [], text
+    delim, fm_raw, body = m.group(1), m.group(2), m.group(3)
+    return delim, fm_raw.splitlines(), body
+
+
+def extract_date(fm_lines):
+    """从 front matter 行中提取 date 字段的 年/月，用于拼图片绝对路径。"""
+    for line in fm_lines:
+        m = re.match(r'^\s*date\s*:\s*"?(\d{4})-(\d{2})', line)
+        if m:
+            return m.group(1), m.group(2)
+        m = re.match(r'^\s*date\s*=\s*"?(\d{4})-(\d{2})', line)
+        if m:
+            return m.group(1), m.group(2)
+    return None, None
+
+
+def zh_image_base(rel_path, fm_lines):
+    """中文站 bundle 的图片绝对路径前缀，如 /blog/2026/10/20261008-161530。
+    仅博客 page bundle（blog/<目录名>/index.md）有此映射；其他返回 None。"""
+    parts = rel_path.parts
+    if parts[0] != "blog":
+        return None
+    if rel_path.name == "index.md":
+        bundle = parts[-2]
+    else:
+        bundle = rel_path.stem
+    year, month = extract_date(fm_lines)
+    if not year:
+        return None
+    return f"/blog/{year}/{month}/{bundle}"
+
+
+def rewrite_image_path(src_path, base):
+    """相对图片路径改写为中文站绝对路径；已是绝对/HTTP 路径则原样返回。"""
+    p = src_path.strip()
+    if not p or p.startswith("/") or p.startswith("http") or p.startswith("#"):
+        return p
+    return f"{base}/{p}"
+
+
+def translate_fm_lines(fm_lines, lang, base):
+    """翻译 front matter 中 title/description；image 字段改写为中文站绝对路径；其余行原样。"""
+    out = []
+    for line in fm_lines:
+        stripped = line.strip()
+        mt = re.match(r'^(title\s*[:=]\s*)"(.*)"\s*$', stripped)
+        if mt:
+            tr = translate(mt.group(2))
+            out.append(f'{mt.group(1)}"{tr[lang].replace(chr(34), chr(92) + chr(34))}"')
             continue
-        kv = re.match(r'^([A-Za-z_]+)\s*=\s*(.*)$', line)
-        if kv:
-            fm[kv.group(1)] = kv.group(2)
-    return fm, body
+        md = re.match(r'^(description\s*[:=]\s*)"(.*)"\s*$', stripped)
+        if md:
+            tr = translate(md.group(2))
+            out.append(f'{md.group(1)}"{tr[lang].replace(chr(34), chr(92) + chr(34))}"')
+            continue
+        mi = re.match(r'^(image\s*[:=]\s*)"?([^"]+)"?\s*$', stripped)
+        if mi and base:
+            out.append(f'{mi.group(1)}"{rewrite_image_path(mi.group(2), base)}"')
+            continue
+        out.append(line)
+    return out
 
 
-def render_front_matter(fm):
-    out = ["+++"]
-    for k, v in fm.items():
-        out.append(f"{k} = {v}")
-    out.append("+++")
-    return "\n".join(out) + "\n"
+def rewrite_body_images(body, base):
+    """把正文里 Markdown 图片的相对路径改写为中文站绝对路径。"""
+    if not base:
+        return body
+
+    def repl(m):
+        alt, path = m.group(1), m.group(2)
+        return f"![{alt}]({rewrite_image_path(path, base)})"
+
+    return re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', repl, body)
 
 
 def translate_body_multi(body):
-    """返回 {lang: 翻译后完整正文}。"""
+    """返回 {lang: 翻译后完整正文}。图片/代码块/纯图片段落原样保留。"""
     blocks = re.split(r"\n\n+", body)
     lang_text = {l: [] for l in LANGS}
     for blk in blocks:
@@ -134,46 +195,38 @@ def translate_body_multi(body):
 
 
 def target_exists(src_rel: pathlib.Path, lang: str) -> bool:
-    """判断某语言版本是否已存在（同路径下 <lang> 目录）。"""
     rel = src_rel.relative_to(CONTENT / SRC)
     return (CONTENT / lang / rel).exists()
 
 
 def translate_one(src_rel: pathlib.Path):
-    """翻译单个内容文件到所有目标语言。返回 (新生成数, 跳过数)。"""
     src_path = CONTENT / SRC / src_rel
     text = src_path.read_text(encoding="utf-8")
-    fm, body = parse_front_matter(text)
-    if fm is None:
+    delim, fm_lines, body = split_front_matter(text)
+    if delim is None:
         return 0, 0
+    base = zh_image_base(src_rel, fm_lines)
     new_cnt, skip_cnt = 0, 0
     for lang in LANGS:
         dst = CONTENT / lang / src_rel
         if dst.exists():
             skip_cnt += 1
             continue
-        # 翻译 front matter 中的 title/description
-        fm_t = dict(fm)
-        for key in ("title", "description"):
-            if key in fm_t:
-                val = fm_t[key].strip().strip('"')
-                tr = translate(val)
-                fm_t[key] = f'"{tr[lang]}"'
-        # 翻译正文
-        lang_body = translate_body_multi(body)[lang]
+        lang_fm = translate_fm_lines(fm_lines, lang, base)
+        lang_body = rewrite_body_images(body, base)
+        lang_body = translate_body_multi(lang_body)[lang]
         if not DRY_RUN:
             dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(render_front_matter(fm_t) + lang_body + "\n", encoding="utf-8")
+            out = delim + "\n" + "\n".join(lang_fm) + "\n" + delim + "\n\n" + lang_body + "\n"
+            dst.write_text(out, encoding="utf-8")
         new_cnt += 1
     return new_cnt, skip_cnt
 
 
 def collect_md_files():
-    """收集 zh 下所有 .md 内容文件（博客 bundle 的 index.md、单文件文章、静态页）。"""
     files = []
     for p in sorted((CONTENT / SRC).rglob("*.md")):
         rel = p.relative_to(CONTENT / SRC)
-        # 排除 _index.md 等特殊文件外的全部 md（包括静态页与博客）
         files.append(rel)
     return files
 

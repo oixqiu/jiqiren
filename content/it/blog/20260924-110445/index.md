@@ -1,0 +1,9 @@
+---
+title: "20260924-1101-Da fare 9307"
+date: 2026-09-24T11:04:45+08:00
+draft: false
+tags: ["待办"]
+description: "Anche se ho comprato il nome di dominio Botdiangsdiancn e l'ho comprato per dieci anni, la mia soddisfazione non è ancora abbastanza alta. Inoltre..."
+---
+
+Anche se ho acquistato il dominio Botdiangs.cn e l'ho comprato per dieci anni, non ne sono ancora molto soddisfatto. Così ho provato a configurare Tencent Enterprise Email per eseguire email da questo dominio, e l'ho usato come server di SMTP per inviare email e costruire il sistema software. Finora, i risultati non sono soddisfacenti. L'intero processo di registrazione per Tencent Enterprise Email è molto fluido. Oggi sono molto deluso perché durante il processo c'è stata effettivamente una fuga di informazioni sia nelle prime che nelle retropagine. E la cosa che hai menzionato prima non si vedeva. Sono rimasto bloccato per venti o trenta minuti. Hmm, ho riprovato dopo che ha superato l'approvazione. Certo, la sua configurazione è anche piuttosto sorprendente, ma ha solo un disco MX e uno C-class. Questo tipo di registrazione non sembra come altri record che devono essere fatti con Tx o simili. Questo tipo di registrazione non funziona con altri sistemi come Tx o simili, quindi viene integrata con il sistema BRU AO. La guida è fantastica, perché forse scegliere Aali o Netwang è probabilmente il disco migliore. Facciamolo prima girare e provare. Perché ora devi scegliere un servizio MMTP stabile, che rende più chiare la registrazione degli utenti, le password e altri aspetti. Tuttavia, l'attuale sito EVO ha un problema: non supporta la ricezione di email. Dopo aver configurato SMTP, non supporta più la ricezione di email. Devi configurare una casella di posta separatamente, o anche solo inoltrare, ma in realtà non la supporta. È piuttosto frustrante—prima hai le opzioni migliori, poi l'inizio scadente porta buoni risultati.

@@ -67,7 +67,7 @@ enableRobotsTXT = true
   description = "Robotics Alliance - jiqiren.gs.cn"
 
   [languages.en.permalinks]
-    blog = "/en/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.en.menu]
     [[languages.en.menu.main]]
@@ -100,7 +100,7 @@ enableRobotsTXT = true
   description = "Alliance Robotique - jiqiren.gs.cn"
 
   [languages.fr.permalinks]
-    blog = "/fr/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.fr.menu]
     [[languages.fr.menu.main]]
@@ -133,7 +133,7 @@ enableRobotsTXT = true
   description = "Roboter-Allianz - jiqiren.gs.cn"
 
   [languages.de.permalinks]
-    blog = "/de/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.de.menu]
     [[languages.de.menu.main]]
@@ -166,7 +166,7 @@ enableRobotsTXT = true
   description = "Alleanza Robotica - jiqiren.gs.cn"
 
   [languages.it.permalinks]
-    blog = "/it/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.it.menu]
     [[languages.it.menu.main]]
@@ -199,7 +199,7 @@ enableRobotsTXT = true
   description = "Alianza Robótica - jiqiren.gs.cn"
 
   [languages.es.permalinks]
-    blog = "/es/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.es.menu]
     [[languages.es.menu.main]]
@@ -232,7 +232,7 @@ enableRobotsTXT = true
   description = "تحالف الروبوتات - jiqiren.gs.cn"
 
   [languages.ar.permalinks]
-    blog = "/ar/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.ar.menu]
     [[languages.ar.menu.main]]
@@ -265,7 +265,7 @@ enableRobotsTXT = true
   description = "ロボット連盟 - jiqiren.gs.cn"
 
   [languages.ja.permalinks]
-    blog = "/ja/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
   [languages.ja.menu]
     [[languages.ja.menu.main]]
@@ -298,7 +298,7 @@ enableRobotsTXT = true
   description = "로봇 연맹 - jiqiren.gs.cn"
 
   [languages.ko.permalinks]
-    blog = "/ko/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 [languages.ru]
   locale = "ru-RU"
   label = "Русский"
@@ -330,7 +330,7 @@ enableRobotsTXT = true
       weight = 5
 
   [languages.ru.permalinks]
-    blog = "/ru/blog/:year/:month/:contentbasename/"
+    blog = "/blog/:year/:month/:contentbasename/"
 
 
   [languages.ko.menu]

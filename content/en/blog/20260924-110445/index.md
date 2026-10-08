@@ -1,0 +1,9 @@
+---
+title: "20260924-1101-To-Do-9307"
+date: 2026-09-24T11:04:45+08:00
+draft: false
+tags: ["待办"]
+description: "Although I bought the domain name Botdiangsdiancn and bought it for ten years, my satisfaction with it is still not high enough. Moreover..."
+---
+
+Although I bought the domain Botdiangs.cn and bought it for ten years, I'm still not very satisfied with it. So I tried configuring Tencent Enterprise Email to run emails from this domain, and used it as SMTP's server to send emails and build the software system. So far, the results are not satisfactory. The entire registration process for Tencent Enterprise Email is very smooth. Today, I'm very disappointed because during the process, there was actually information leakage on both the front and back pages. And the previous thing you mentioned couldn't be seen. I got stuck for twenty or thirty minutes. Hmm, I tried again after it passed approval. Of course, its configuration is also quite amazing, but it only has an Mx record and a C-class record. This kind of record doesn't seem like other records that need to be done with Tx or so on. This kind of recording doesn't work with other systems like tx or so on, causing it to be integrated with the BRU AO system. The guide is amazing, because maybe choosing the Aali's or Netwang's is probably the best record. Let's run it first and give it a try. Because now you need to choose a stable MMTP service, which makes user registration, passwords, and other aspects clearer. However, the current EVO site has a problem: it does not support receiving emails. After configuring SMTP, it does not support receiving emails. You have to set up an inbox separately, or even just forward, but it really doesn't support it. This is quite frustrating—first you have the best options, then the poor start yields good results.
