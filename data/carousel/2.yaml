@@ -1,5 +1,5 @@
 weight: 3
 title: "carousel2Title"
 description: "carousel2Desc"
-image: "img/carousel/template-tablets.png"
+image: "/img/carousel/template-tablets.png"
 href: "/products/"

@@ -1,5 +1,5 @@
 weight: 1
 title: "carousel3Title"
 description: "carousel3Desc"
-image: "img/carousel/template-easy-code.png"
+image: "/img/carousel/template-easy-code.png"
 href: "/products/"

@@ -1,5 +1,5 @@
 weight: 2
 title: "carousel1Title"
 description: "carousel1Desc"
-image: "img/carousel/template-mac.png"
+image: "/img/carousel/template-mac.png"
 href: "/products/"
