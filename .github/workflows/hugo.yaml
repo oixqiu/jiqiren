@@ -1,5 +1,4 @@
-# Workflow: 构建 Hugo 站点并发布到 GitHub Pages
-# 触发：推送 main 分支或手动运行
+# Workflow: 构建 Hugo 站点并发布到 GitHub Pages（含多语言自动翻译）
 name: Deploy Hugo site to Pages
 
 on:
@@ -8,17 +7,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
-# 同一时间只允许一个 Pages 部署任务
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 构建
   build:
     runs-on: ubuntu-latest
     env:
@@ -40,24 +37,39 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Translate new Chinese posts to 9 languages
+        env:
+          AZURE_TRANSLATOR_KEY: ${{ secrets.AZURE_TRANSLATOR_KEY }}
+          AZURE_TRANSLATOR_REGION: ${{ secrets.AZURE_TRANSLATOR_REGION }}
+        run: |
+          if [ -n "$AZURE_TRANSLATOR_KEY" ]; then
+            python3 .github/scripts/translate-blog.py
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add content/
+            if ! git diff --cached --quiet; then
+              git commit -m "ci: auto-translate new posts to 9 languages [skip ci]"
+              git push
+            else
+              echo "无新翻译文件。"
+            fi
+          else
+            echo "未配置 AZURE_TRANSLATOR_KEY，跳过翻译。"
+          fi
+
       - name: Build with Hugo
         env:
-          # 生产环境
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
           TZ: Asia/Shanghai
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
-  # 部署
   deploy:
     environment:
       name: github-pages
